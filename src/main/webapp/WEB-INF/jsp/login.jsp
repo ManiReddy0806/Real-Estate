@@ -1,0 +1,15 @@
+<%@ include file="layout.jsp" %>
+<jsp:body>
+    <h2>Login</h2>
+    <form method="post" action="${pageContext.request.contextPath}/login">
+        <div class="mb-3">
+            <label>Username</label>
+            <input name="username" class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label>Password</label>
+            <input name="password" type="password" class="form-control"/>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+</jsp:body>
